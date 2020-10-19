@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1603129123 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"mascotasYrazas.h"
+	"menuYvalidaciones.h"
+
+1603124666 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotasyrazas.h
+	"mascotas.h"
+	"razas.h"
+
+1603129043 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotas.h
+
+1603122466 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\razas.h
+
+1603132055 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\menuyvalidaciones.h
+
+1603132219 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"mascotas.h"
+	"menuYvalidaciones.h"
+
+1603132037 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\menuyvalidaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"menuYvalidaciones.h"
+
+1603129181 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotasyrazas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"mascotasYrazas.h"
+	"menuYvalidaciones.h"
+
+1603123747 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\razas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"razas.h"
+	"menuYvalidaciones.h"
+
