@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1603593495 source:c:\users\frankito\desktop\recuperatorio-laboratorio-final\main.c
+	<stdio.h>
+	<stdlib.h>
+	"mascotas_razas_paises.h"
+	"franco_validaciones.h"
+
+1603584735 c:\users\frankito\desktop\recuperatorio-laboratorio-final\mascotas.h
+
+1603593537 source:c:\users\frankito\desktop\recuperatorio-laboratorio-final\mascotas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"mascotas.h"
+
+1603593532 source:c:\users\frankito\desktop\recuperatorio-laboratorio-final\razas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"razas.h"
+
+1603586669 c:\users\frankito\desktop\recuperatorio-laboratorio-final\razas.h
+
+1603587920 c:\users\frankito\desktop\recuperatorio-laboratorio-final\pais.h
+
+1603591550 source:c:\users\frankito\desktop\recuperatorio-laboratorio-final\pais.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pais.h"
+
+1603593407 c:\users\frankito\desktop\recuperatorio-laboratorio-final\mascotas_razas_paises.h
+	"mascotas.h"
+	"razas.h"
+	"pais.h"
+
+1603593639 source:c:\users\frankito\desktop\recuperatorio-laboratorio-final\mascotas_razas_paises.c
+	<stdio.h>
+	<stdlib.h>
+	"mascotas_razas_paises.h"
+
+1603592807 source:c:\users\frankito\desktop\recuperatorio-laboratorio-final\franco_validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"franco_validaciones.h"
+
+1603592774 c:\users\frankito\desktop\recuperatorio-laboratorio-final\franco_validaciones.h
+

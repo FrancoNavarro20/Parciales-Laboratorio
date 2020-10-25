@@ -1,6 +1,5 @@
-#ifndef MENUYVALIDACIONES_H_INCLUDED
-#define MENUYVALIDACIONES_H_INCLUDED
-
+#ifndef FRANCO_VALIDACIONES_H_INCLUDED
+#define FRANCO_VALIDACIONES_H_INCLUDED
 
 /** \brief te pide un numero;
  *
@@ -131,4 +130,8 @@ int opcionErrorNumerosFlotantes(char opcion[],char textoError[]);
 
 
 int opcionErrorNumerosTipos(char opcion[],char textoError[],int* opcionValidada);
-#endif // MENUYVALIDACIONES_H_INCLUDED
+
+
+
+
+#endif // FRANCO_VALIDACIONES_H_INCLUDED

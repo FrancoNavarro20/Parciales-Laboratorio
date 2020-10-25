@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "menuYvalidaciones.h"
+#include "franco_validaciones.h"
 #define VACIO 0
 #define LLENO 1
 

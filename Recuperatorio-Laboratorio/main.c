@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include "mascotasYrazas.h"
+#include "pais.h"
 #include "menuYvalidaciones.h"
 #define cMascotas 10
-#define cRazas 4
+#define cRazas 5
+#define cPais 5
 #define LLENO 1
 #define VACIO 0
 /*
@@ -28,20 +30,27 @@ int main()
 {
     eMascotas  datosMascotas[cMascotas];
     eRazas datosRazas[cRazas];
+    ePais datosPaises[cPais];
     int opcionMenuPrincipal;
 
     //1.Inicializar Isempty de mascotas;
     inicializar_IsEmty(datosMascotas,cMascotas);
     //2.Harcodear datos;
     InicializarMascotas(datosMascotas);
+    //3.Inicializar IsEmpty razas
+    IsEmpty_Raza(datosRazas,cRazas);
+    //4.Harcodear datos razas;
     InicializarRazas(datosRazas,cRazas);
+
+    InicializarPaises(datosPaises);
+
     do
     {
-        menu("1.Mostrar mascotas y razas\n2.Alta mascota","Ingrese una opcion:","Error-re-Ingrese la opcion:",&opcionMenuPrincipal);
-        FuncionesSwitchMenu(datosMascotas,datosRazas,cMascotas,cRazas,opcionMenuPrincipal);
+        menu("1.Mostrar mascotas y razas\n2.Alta mascota\n3.Mostrar Raza con sus mascotas\n4.Eliminar mascota\n5.Mostrar mascotas por peso\n6.Modificar mascota\n7.Alta raza\n8.Mostrar el pais con mas  mascotas\n","Ingrese una opcion:","Error-re-Ingrese la opcion:",&opcionMenuPrincipal);
+        FuncionesSwitchMenu(datosMascotas,datosRazas,datosPaises,cMascotas,cRazas,opcionMenuPrincipal);
 
 
-    }while(opcionMenuPrincipal!= 5);
+    }while(opcionMenuPrincipal!= 10);
 
     return 0;
 

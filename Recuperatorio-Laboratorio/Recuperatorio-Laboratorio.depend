@@ -1,46 +1,61 @@
 # depslib dependency file v1.0
-1603129123 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\main.c
+1603429321 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"mascotasYrazas.h"
+	"pais.h"
 	"menuYvalidaciones.h"
 
-1603124666 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotasyrazas.h
+1603429281 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotasyrazas.h
 	"mascotas.h"
 	"razas.h"
+	"pais.h"
 
-1603129043 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotas.h
+1603418513 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotas.h
+	"razas.h"
 
-1603122466 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\razas.h
+1603423788 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\razas.h
 
-1603132055 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\menuyvalidaciones.h
+1603332894 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\menuyvalidaciones.h
 
-1603132219 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotas.c
+1603429844 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotas.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"mascotas.h"
+	"razas.h"
 	"menuYvalidaciones.h"
 
-1603132037 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\menuyvalidaciones.c
+1603333121 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\menuyvalidaciones.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"menuYvalidaciones.h"
 
-1603129181 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotasyrazas.c
+1603430044 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\mascotasyrazas.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"mascotasYrazas.h"
+	"pais.h"
+	"mascotas.h"
 	"menuYvalidaciones.h"
 
-1603123747 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\razas.c
+1603426643 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\razas.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"razas.h"
 	"menuYvalidaciones.h"
+
+1603423665 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\pais.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pais.h"
+	"menuYvalidaciones.h"
+
+1603429230 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio\pais.h
 

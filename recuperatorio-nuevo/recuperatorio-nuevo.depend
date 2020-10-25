@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1603459546 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-nuevo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"mascotas.h"
+	"razas.h"
+	"MostrarMascotasYrazasYpais.h"
+
+1603460320 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-nuevo\mascotas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"mascotas.h"
+
+1603459467 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-nuevo\mascotas.h
+
+1603459522 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-nuevo\mostrarmascotasyrazasypais.h
+
+1603460327 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-nuevo\mostrarmascotasyrazasypais.c
+	<stdio.h>
+	<stdlib.h>
+	"mascotas.h"
+	"razas.h"
+	"MostrarMascotasYrazasYpais.h"
+
+1603459724 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-nuevo\razas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"razas.h"
+
+1603459491 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-nuevo\razas.h
+
