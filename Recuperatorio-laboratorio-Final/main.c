@@ -32,7 +32,7 @@ int main()
 
     do
     {
-        menu("1.Mostrar mascotas ,razas y paises\n","Ingrese una opcion:","Error solo numeros,vuelva a ingresar la opcion:",&opcionMenu);
+        menu("1.Mostrar mascotas ,razas y paises\n2.Alta mascotas\n3.Eliminar mascotas\n4.Modificar mascotas\n","Ingrese una opcion:","Error solo numeros,vuelva a ingresar la opcion:",&opcionMenu);
         switchFuncionesMenu(datosMascotas,datosRazas,datosPais,cantMascotas,cantRazas,cantPaises,opcionMenu);
     }while(opcionMenu != 5);
 
