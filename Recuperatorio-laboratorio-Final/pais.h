@@ -7,7 +7,10 @@ typedef struct
     char continente[30];
     int CodigoTelefonico;
     int Idpais;
+    int isEmpty;
 }ePais;
 
 int hardcodear_Paises(ePais datosPais[]);
+
+int mostrarPaises(ePais datosPais[],int tamPaises);
 #endif // PAIS_H_INCLUDED

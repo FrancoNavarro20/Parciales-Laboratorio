@@ -28,6 +28,7 @@ int switchFuncionesMenu(eMascotas datosMascotas[],eRazas datosRazas[],ePais dato
             case 1:
                 system("cls");
                 printf("******Mostrando lista de mascotas con sus razas y paises(recorda agrandar la consola para ver bien los datos)********\n\n");
+                //mascotasPorID(datosMascotas,tamMascotas);
                 mostrarMascotas_Razas_Paises(datosMascotas,datosRazas,datosPais,tamMascotas,cantRazas,cantPaises);
                 system("pause");
                 system("cls");
@@ -72,6 +73,28 @@ int switchFuncionesMenu(eMascotas datosMascotas[],eRazas datosRazas[],ePais dato
                 system("pause");
                 system("cls");
                 break;
+            case 5:
+                system("cls");
+                printf("**************Mostrar Mascotas con sus Razas************************************\n");
+                mostrarMascotasPorRazasTodas(datosMascotas,datosRazas,datosPais,tamMascotas);
+                system("pause");
+                system("cls");
+                break;
+            case 6:
+                system("cls");
+                printf("**************Mostrar Mascotas por Peso************************************\n");
+                mascotasPorPeso(datosMascotas,tamMascotas);
+                mostrarMascotas_Razas_Paises(datosMascotas,datosRazas,datosPais,tamMascotas,tamRazas,tamPaises);
+                system("pause");
+                system("cls");
+                break;
+            case 7:
+                system("cls");
+                printf("*******Alta raza***********\n");
+                cargarRazas(datosRazas,datosPais,tamRazas);
+                system("pause");
+                system("cls");
+                break;
             default:
                 printf("La opcion ingresada no esta dentro de las opciones de la lista, vuelva a intentarlo...\n");
                 system("pause");
@@ -98,13 +121,14 @@ int mostrarMascotas_Razas_Paises(eMascotas datosMascotas[],eRazas datosRazas[],e
         for(i=0;i<tamMascotas;i++)
         {
             buscarRazas(datosMascotas[i].idRazas,datosRazas,tamRazas,&razaEncontrada);
-            buscarPais(razaEncontrada,datosPais,tamPaises,&paisEncontrada);
+            //buscarPais(razaEncontrada,datosPais,tamPaises,&paisEncontrada);
+
             if(datosMascotas[i].isEmpty == LLENO)
             {
                printf("  %-6d %-12s %-9d %-9c %-9s %-9.2f %-15s  %-12s %-13s %-18s %-5d\n",datosMascotas[i].idMascota,datosMascotas[i].nombreMascota
                                  ,datosMascotas[i].edad,datosMascotas[i].sexo,datosMascotas[i].tipo,datosMascotas[i].pesoMascota
-                                 ,datosRazas[razaEncontrada].descripcion,datosRazas[razaEncontrada].tamanio,datosPais[paisEncontrada].nombrePais,datosPais[paisEncontrada].continente
-                                 ,datosPais[paisEncontrada].CodigoTelefonico);
+                                 ,datosRazas[razaEncontrada].descripcion,datosRazas[razaEncontrada].tamanio,datosPais[razaEncontrada].nombrePais,datosPais[razaEncontrada].continente
+                                 ,datosPais[razaEncontrada].CodigoTelefonico);
             }
         }
     }
@@ -132,12 +156,12 @@ int buscarRazas(int idRazaMascotas,eRazas datosRazas[],int tamRazas,int* razaEnc
 
     return retorno;
 }
-
+/*
 int buscarPais(int idRazaPais,ePais datosPais[],int tamPais,int* paisEncontrada)
 {
     int retorno = -1;
     int i;
-    if(datosPais !=NULL&& paisEncontrada!=NULL&& tamPais>0)
+    if(datosPais !=NULL&& paisEncontrada!=NULL&& tamPais>-1)
     {
         for(i=0;i<tamPais;i++)
         {
@@ -152,7 +176,7 @@ int buscarPais(int idRazaPais,ePais datosPais[],int tamPais,int* paisEncontrada)
 
     return retorno;
 }
-
+*/
 //-------------------ELIMINAR MASCOTAS---------------------||
 
 int eliminarMascota(eMascotas datosMascotas[],eRazas datosRazas[],int idEliminar,int tamMascotas)
@@ -196,4 +220,164 @@ int modificarMascota(eMascotas datosMascotas[],eRazas datosRazas[],int idModific
     }
     return retorno;
 }
+//-------------------Mostrar Listado de razas con sus animales---------------------||
+
+int mostrarMascotasPorRaza(eMascotas datosMascotas[],eRazas datosRazas[],ePais datosPaises[],int idRaza,int tamMascotas)
+{
+    int retorno = -1;
+    int j;
+
+    if(datosMascotas!= NULL && tamMascotas>0&& idRaza>0)
+    {
+        printf("\n |   NOMBRE      |  SEXO   |   EDAD  |   TIPO   |  PESO   |    RAZA           |    PAIS\n");
+        for(j=0;j<tamMascotas;j++)
+        {
+
+            if(idRaza == datosMascotas[j].idRazas && datosMascotas[j].isEmpty == LLENO)
+            {
+
+                printf("     %-14s   %-7c   %-6d  %-9s %-12.2f %-17s %-9s\n",datosMascotas[j].nombreMascota,datosMascotas[j].sexo,datosMascotas[j].edad, datosMascotas[j].tipo
+                                                                            , datosMascotas[j].pesoMascota,datosRazas[idRaza-1].descripcion, datosPaises[idRaza-1].nombrePais);
+                retorno = 0;
+            }
+        }
+    }
+
+    return retorno;
+}
+
+
+
+int mostrarMascotasPorRazasTodas(eMascotas datosMascotas[],eRazas datosRazas[],ePais datosPaises[],int tamMascotas)
+{
+    int retorno = -1;
+    int j;
+    //int canMascotasCargadas;
+    if(datosMascotas!= NULL && tamMascotas>0)
+    {
+
+        for(j=0;j<tamMascotas;j++)
+        {
+            if(datosMascotas[j].isEmpty == LLENO && datosMascotas[j+1].isEmpty == LLENO)
+            {
+
+                mostrarMascotasPorRaza(datosMascotas,datosRazas,datosPaises,j+1,tamMascotas);
+                retorno = 0;
+            }
+        }
+    }
+
+    return retorno;
+}
+
+//*******Mostrar masotas por peso************************
+
+
+
+void mascotasPorPeso(eMascotas arrayMascotas[], int tamanioMascotas)
+{
+    int i;
+    int j;
+    eMascotas auxMascota;
+
+
+    for (i=0;i<tamanioMascotas-1;i++)
+    {
+        for (j=i+1;j<tamanioMascotas;j++)
+        {
+            if (arrayMascotas[i].isEmpty == 1 && arrayMascotas[i].pesoMascota <= arrayMascotas[j].pesoMascota)
+            {
+                auxMascota = arrayMascotas[i];
+                arrayMascotas[i] = arrayMascotas[j];
+                arrayMascotas[j] = auxMascota;
+            }
+        }
+
+    }
+
+}
+void mascotasPorID(eMascotas arrayMascotas[], int tamanioMascotas)
+{
+    int i;
+    int j;
+    eMascotas auxMascota;
+
+
+    for (i=0;i<tamanioMascotas-1;i++)
+    {
+        for (j=i+1;j<tamanioMascotas;j++)
+        {
+            if (arrayMascotas[i].isEmpty == 1 && arrayMascotas[i].idMascota >= arrayMascotas[j].idMascota)
+            {
+                auxMascota = arrayMascotas[i];
+                arrayMascotas[i] = arrayMascotas[j];
+                arrayMascotas[j] = auxMascota;
+            }
+        }
+
+    }
+}
+
+/*
+int OrdenandoMacotasPorPeso(eMascotas datosMascotas[], eRazas datosRazas[],int tamMascotas)
+{
+    int retorno = -1;
+    int i,j;
+    eMascotas auxMascotas;
+
+    if(datosMascotas !=NULL && datosMascotas !=NULL && tamMascotas > 0)
+    {
+        for(i=0;i<tamMascotas-1;i++)
+        {
+            for(j=i+1;j<tamMascotas;j++)
+            {
+                if(datosMascotas[i].pesoMascota > datosMascotas[j].pesoMascota && datosMascotas[i].isEmpty == LLENO)
+                {
+                   auxMascotas = datosMascotas[i];
+                   datosMascotas[i] = datosMascotas[j];
+                   datosMascotas[j] = auxMascotas;
+                   break;
+                }
+            }
+
+        }
+    }
+
+    return retorno;
+}
+
+int OrdenandoMacotasPorPeso(eMascotas datosMascotas[], eRazas datosRazas[],int tamMascotas)
+{
+    int retorno = -1;
+    int i,j;
+    eMascotas auxMascotas;
+
+    if(datosMascotas !=NULL && datosMascotas !=NULL && tamMascotas > 0)
+    {
+        for(i=0;i<tamMascotas-1;i++)
+        {
+            for(j=i+1;j<tamMascotas;j++)
+            {
+                if(datosMascotas[i].pesoMascota > datosMascotas[j].pesoMascota && datosMascotas[i].isEmpty == LLENO)
+                {
+                   auxMascotas = datosMascotas[i];
+                   datosMascotas[i] = datosMascotas[j];
+                   datosMascotas[j] = auxMascotas;
+                   break;
+                }
+            }
+
+        }
+    }
+
+    return retorno;
+}
+*/
+
+
+
+
+
+
+
 

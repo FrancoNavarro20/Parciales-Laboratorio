@@ -51,3 +51,57 @@
 
 1603592774 c:\users\frankito\desktop\recuperatorio-laboratorio-final\franco_validaciones.h
 
+1603592807 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\franco_validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"franco_validaciones.h"
+
+1603592774 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\franco_validaciones.h
+
+1603734715 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\main.c
+	<stdio.h>
+	<stdlib.h>
+	"mascotas_razas_paises.h"
+	"franco_validaciones.h"
+
+1603732886 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\mascotas_razas_paises.h
+	"mascotas.h"
+	"razas.h"
+	"pais.h"
+
+1603660358 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\mascotas.h
+	"razas.h"
+
+1603738615 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\razas.h
+	"pais.h"
+
+1603738331 c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\pais.h
+
+1603730986 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\mascotas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"mascotas.h"
+	"franco_validaciones.h"
+
+1603739819 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\mascotas_razas_paises.c
+	<stdio.h>
+	<stdlib.h>
+	"mascotas_razas_paises.h"
+	"franco_validaciones.h"
+
+1603738350 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\pais.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pais.h"
+
+1603740446 source:c:\users\frankito\desktop\programacion c - github\parciales-laboratorio\recuperatorio-laboratorio-final\razas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"razas.h"
+	"franco_validaciones.h"
+

@@ -33,7 +33,7 @@ int hardcodear_Mascotas(eMascotas datosMascotas[])
     int edad[7]={5,3,1,4,7,4,9};
     char sexo[7]={'f','f','m','m','m','m','m'};
     char tipo[7][20]={"perro","perro","gato","gato","gato","perro","perro"};
-    float peso[7]={4.2,3.2,5.1,6.5,7.7,4.2,8.2};
+    float peso[7]={4.2,3.2,5.1,6.5,7.7,9.2,8.2};
     int idDeLasRazas[7] ={4,2,1,3,2,5,6};
     //*-------*
     int i;

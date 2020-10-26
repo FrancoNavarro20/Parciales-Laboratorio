@@ -12,7 +12,11 @@ int mostrarMascotas_Razas_Paises(eMascotas datosMascotas[],eRazas datosRazas[],e
 //***
 int eliminarMascota(eMascotas datosMascotas[],eRazas datosRazas[],int idEliminar,int tamMascotas);
 int modificarMascota(eMascotas datosMascotas[],eRazas datosRazas[],int idModificar,int tamMascotas);
-
-
-
+//***
+int mostrarMascotasPorRaza(eMascotas datosMascotas[],eRazas datosRazas[],ePais datosPaises[],int idRaza,int tamMascotas);
+int mostrarMascotasPorRazasTodas(eMascotas datosMascotas[],eRazas datosRazas[],ePais datosPaises[],int tamMascotas);
+//***
+//int OrdenandoMacotasPorPeso(eMascotas datosMascotas[], eRazas datosRazas[],int tamMascotas);
+void mascotasPorPeso(eMascotas arrayMascotas[], int tamanioMascotas);
+void mascotasPorID(eMascotas arrayMascotas[], int tamanioMascotas);
 #endif // MASCOTAS_RAZAS_PAISES_H_INCLUDED

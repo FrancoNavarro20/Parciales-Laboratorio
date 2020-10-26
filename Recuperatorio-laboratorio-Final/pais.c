@@ -20,6 +20,7 @@ int hardcodear_Paises(ePais datosPais[])
         strcpy(datosPais[i].continente,continente[i]);
         datosPais[i].CodigoTelefonico = codigoTel[i];
         datosPais[i].Idpais = id[i];
+        datosPais[i].isEmpty = LLENO;
         retorno =0;
         /*
         printf("%s----%s---%d-----%d\n",datosPais[i].nombrePais,datosPais[i].continente,datosPais[i].CodigoTelefonico
@@ -29,3 +30,23 @@ int hardcodear_Paises(ePais datosPais[])
 
     return retorno;
 }
+//Mostrar Paises
+
+int mostrarPaises(ePais datosPais[],int tamPaises)
+{
+    int retorno = -1;
+    int i;
+    printf("   Id   |  PAIS   |  CONTINENTE\n");
+    if(datosPais != NULL && tamPaises > 0)
+    {
+        for(i=0;i<tamPaises;i++)
+        {
+            printf("   %d---%s---%s\n",i+1,datosPais[i].nombrePais,datosPais[i].continente);
+            retorno = 0;
+        }
+    }
+
+    return retorno;
+}
+
+
